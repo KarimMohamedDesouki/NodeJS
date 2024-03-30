@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Client Side</title>
+	
+</head>
+
+<body>
+	<h1>Node.js</h1>
+	<ul id="links">
+		<li>
+			<a onclick="Lab1()" data-text="Lab 1 ">Lab 1</a>
+		</li>
+	</ul>
+
+	<script>
+		let links = document.getElementById("links");
+		function Lab1() {
+			while (links.firstChild) {
+				links.removeChild(links.firstChild);
+			}
+			let str =
+		`
+		<li>
+			<a  href="./Lab 1/myserver.js" data-text="Myserver ">Myserver</a>
+		</li>
+		<li>
+			<a  href="./Lab 1/data.txt" data-text="data ">Data</a>
+		</li>
+		`
+			links.insertAdjacentHTML("beforeend", str);
+		}
+
+		</script>
+</body>
+
+</html>
