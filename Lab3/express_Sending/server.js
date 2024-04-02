@@ -28,6 +28,8 @@ app.post('/users.html',(req,res)=>{
     // console.log(req.body);
     var body = req.body;
     // console.log(body);
+
+    // let { name, number, address, email } = req.body; deh bdeeel li line 33 to 36
     var name = body.name;
     var number = body.number;
     var email = body.email;
